@@ -70,8 +70,4 @@ input[type="color"] {
 	opacity: 1;
 }
 
-@media (max-width: 600px) {
-	* {
-		display: none;
-	}
-}
+
