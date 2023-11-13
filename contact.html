@@ -1,9 +1,35 @@
-<!DOCTYPE HTML>
-<html>
-  <head>
-  <title>YES</title>
-  </head>
-  <body>
-    <h1>Bye</h1>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Kicrops - Contact</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="index.css" />
+		<link rel="icon" type="image/x-icon" href="img/fc2f3facdd1a24384756a93f63701676.png" />
+	</head>
+	<body>
+		<a href="/"
+			><button class="exit-btn"><i class="fa-regular fa-circle-xmark"></i></button
+		></a>
+		<div class="form-div">
+			<h1 class="form-title">Contact Form</h1>
+
+			<form class="form">
+				<label for="name"><i class="itext fa-regular fa-user"></i>Name<br /><input type="text" name="name" placeholder="Joe Smith" id="name" required /></label>
+
+				<label for="email"><i class="itext fa-regular fa-envelope"></i>Email<br /><input type="email" name="email" placeholder="joesmith@example.com" id="email" required /></label>
+
+				<label for="text"><i class="itext fa-regular fa-message"></i>Message<br /><textarea spellcheck="true" minlength="20" name="text" id="text" rows="3" required></textarea></label>
+
+				<button class="form-btn" onclick="contactButton();" type="submit">Send</button>
+			</form>
+		</div>
+		<a
+			><button id="theme-btn" class="theme-btn" onclick="changeButtonColor()"><i class="fa-solid fa-circle-half-stroke"></i></button
+		></a>
+		<script src="index.js"></script>
+		<script src="https://kit.fontawesome.com/6d6e8150be.js" crossorigin="anonymous"></script>
+	</body>
 </html>

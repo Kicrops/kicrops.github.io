@@ -1,10 +1,74 @@
-<!DOCTYPE HTML>
-<html>
-  <head>
-  <title>YES</title>
-  </head>
-  <body>
-    <h1>Hello</h1>
-    <a href="/contact.hmtl">ey</a>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />  
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Kicrops - Portfolio</title>
+		<meta name="description" content="Website Portfolio of Kicrops" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:image" content="img/favicon.ico">
+        <meta property="og:site_name" content="https://kicrops.is-a.dev">
+		<meta name="og:url" content="https://kicrops.is-a.dev">
+        <meta name="theme-color" content="#FF7800">
+		<link rel="stylesheet" href="index.css" />
+		<link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+	</head>
+	<body>
+		<div id="about" class="top"></div>
+		<header class="topbar">
+			<a class="header-a" href=""><img class="logo" src="img/fc2f3facdd1a24384756a93f63701676.png" alt="logo" /></a>
+			<nav class="media-a">
+				<ul class="nav-ul">
+					<a class="header-a" class="nav-a" href="#about"
+						><li><i class="itop itext fa-regular fa-user"></i><span class="htext">About</span></li></a
+					>
+					<a class="header-a" class="nav-a" href="#projects"
+						><li><i class="itop itext fa-regular fa-folder"></i><span class="htext">Projects</span></li></a
+					>
+				</ul>
+			</nav>
+			<a class="header-a media-a" class="btn" target="_top" href="/contact.html"
+				><button class="contact-btn"><i class="itop itext fa-regular fa-envelope"></i><span class="htext">Contact</span></button></a
+			>
+		</header>
+		<main>
+			<div class="about section" id="about">
+				<div class="about-text-div">
+					<h1 class="h1 about-text">About Me</h1>
+					<h2 class="h2 about-text">My name is Kicrops, I'm a self taught programmer born in Argentina, looking forward to studying Informatics Engineering</h2>
+				</div>
+			</div>
+			<div class="projects section" id="projects">
+				<h1 class="h1 projects-text">Projects</h1>
+				<div class="projects-div">
+					<a target="_blank" href="https://top.gg/bot/786098977204469791"><div class="project-container">
+						<div class="project-img-container">
+							<img src="img/omega.png" class="icon" alt="Omega Bot" />
+							<div class="project-label">
+								<i class="itext fa-solid fa-arrow-up-right-from-square"></i>Omega Bot</a>
+							</div>
+						</div>
+						<i class="fa-brands fa-discord discord-icon"></i>
+					</div>
+					<a target="_blank" href="https://top.gg/bot/936790195523706922"><div class="project-container">
+						<div class="project-img-container">
+							<img src="img/wordle.png" class="icon" alt="Wordle" />
+							<div class="project-label">
+								<i class="itext fa-solid fa-arrow-up-right-from-square"></i>Wordle</a>
+							</div>
+						</div>
+						<i class="fa-brands fa-discord discord-icon"></i>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="footer-text">Copyright Kicrops @ 2023</div>
+		</footer>
+		<a
+		><button id="theme-btn" class="theme-btn" onclick="changeButtonColor()"><i class="fa-solid fa-circle-half-stroke"></i></button
+	></a>
+		<script src="index.js"></script>
+		<script src="https://kit.fontawesome.com/6d6e8150be.js" crossorigin="anonymous"></script>
+	</body>
 </html>
