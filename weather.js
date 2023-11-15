@@ -34,10 +34,11 @@ function getWeather() {
 				date.toLocaleTimeString("en-US", { timeZone: tz });
 			  
 				// Get the formatted time
-				const formattedTime = date.toLocaleTimeString("en-US", {
-				  hour: "numeric",
-				  minute: "2-digit",
-				  timeZone: tz,
+				const formattedTime = date.toLocaleTimeString("en-US", { 
+				hour12: false,
+				hour: '2-digit',
+				minute: '2-digit',
+				timeZone: tz,
 				});
 			  
 				return formattedTime;
