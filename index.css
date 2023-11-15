@@ -281,7 +281,7 @@ footer {
 	pointer-events: auto;
 }
 
-.discord-icon, .fa-globe {
+.fa-discord, .fa-globe {
 	margin: auto;
 	font-size: 24px;
 	color: var(--text);
