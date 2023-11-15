@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<input type="search" value="London" name="" id="input" />
+			<button onclick="getWeather()">
+				<i class="fa-solid fa-magnifying-glass"></i>
+			</button>
+		</header>
+		<main class="container">
+			<div class="card">
+				<div class="location">
+					<span>Name: <span class="name"></span></span>
+					<span>Region: <span class="region"></span></span>
+					<span>Country: <span class="country"></span></span>
+				</div>
+				<div class="info">
+					<div class="main-info">
+						<span class="temp"></span>
+						<span class="weather"></span>
+						<span class="humidity"></span>
+						<img class="img" src="" alt="" />
+					</div>
+					<div class="wind-info">
+						<span class="wind-speed"></span>
+						<span class="wind-dir"></span>
+					</div>
+					<div class="time-info">
+						<span class="time"></span>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<script src="https://kit.fontawesome.com/6d6e8150be.js" crossorigin="anonymous"></script>
+		<script src="main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,69 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    border: 1px solid;
+}
+
+body {
+	overflow: hidden;
+}
+
+.header {
+	background-color: #242424;
+	height: 5vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	/* background-color: #505050; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	font-size: 2rem;
+	height: 100vh;
+}
+
+.day {
+	background: linear-gradient(135deg, rgb(16, 227, 255), rgb(123, 255, 255));
+}
+
+.night {
+	background: linear-gradient(135deg, rgb(2, 10, 128), rgb(0, 2, 95));
+}
+
+span {
+	color: #ffffff;
+}
+
+input {
+    text-transform: capitalize;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 60%;
+    height: 80%;
+	font-family: sans-serif;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-info { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
