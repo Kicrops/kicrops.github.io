@@ -4,7 +4,7 @@ document.addEventListener("keydown", function (event) {
 	if (event.key === "Enter") {
 		// Run your code here
 		getWeather();
-	}
+	} 
 });
 
 function getWeather() {
