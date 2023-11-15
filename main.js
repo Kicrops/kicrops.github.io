@@ -1,5 +1,5 @@
 const userLang = navigator.language || navigator.userLanguage;
- 
+
 const intervalID = setInterval(updateClock, 1000);
 const intervalIDC = setInterval(updateColons, 500);
 
