@@ -4,7 +4,8 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-    border: 1px solid;
+	font-family: sans-serif;
+/* 	border: 1px solid; */
 }
 
 body {
@@ -13,7 +14,7 @@ body {
 
 .header {
 	background-color: #242424;
-	height: 5vh;
+	height: 10vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -21,9 +22,9 @@ body {
 
 .container {
 	/* background-color: #505050; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	font-size: 2rem;
 	height: 100vh;
 }
@@ -37,33 +38,97 @@ body {
 }
 
 span {
-	color: #ffffff;
+	color: #000;
 }
 
 input {
-    text-transform: capitalize;
+	text-transform: capitalize;
+	flex: 1;
+	border: none;
+	padding: 8px;
+	font-size: 16px;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.1);
-    width: 60%;
-    height: 80%;
-	font-family: sans-serif;
+	background-color: #fff;
+	border-radius: 4px;
+	padding: 20px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	display: none;
+}
+
+.location {
+	margin-bottom: 10px;
+}
+
+.name,
+.region,
+.country {
+	font-weight: bold;
 }
 
 .info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
 }
 
-.main-info { 
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.main-info {
+	display: flex;
+	align-items: center;
+	font-size: 24px;
+}
+
+.temp {
+	font-size: 32px;
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+.weather {
+	margin-right: 10px;
+}
+
+.humidity {
+	margin-right: 10px;
+}
+
+.img {
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+}
+
+.wind-info,
+.time-info {
+	margin-top: 10px;
+}
+
+.wind-speed,
+.wind-dir,
+.time {
+	font-size: 14px;
+}
+
+.search-bar {
+	display: flex;
+	align-items: center;
+	background-color: #f1f1f1;
+	padding: 10px;
+	border-radius: 4px;
+}
+
+.button {
+	background-color: #4285f4;
+	color: #fff;
+	border: none;
+	padding: 8px 16px;
+	margin-left: 8px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: #3367d6;
 }
