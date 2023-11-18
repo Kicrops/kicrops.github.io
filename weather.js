@@ -4,7 +4,7 @@ document.addEventListener("keydown", function (event) {
 	if (event.key === "Enter") {
 		// Run your code here
 		getWeather();
-	} 
+	}
 });
 
 function getWeather() {
@@ -34,11 +34,10 @@ function getWeather() {
 				date.toLocaleTimeString("en-US", { timeZone: tz });
 			  
 				// Get the formatted time
-				const formattedTime = date.toLocaleTimeString("en-US", { 
-				hour12: false,
-				hour: '2-digit',
-				minute: '2-digit',
-				timeZone: tz,
+				const formattedTime = date.toLocaleTimeString("en-US", {
+				  hour: "numeric",
+				  minute: "2-digit",
+				  timeZone: tz,
 				});
 			  
 				return formattedTime;
@@ -46,8 +45,8 @@ function getWeather() {
 			  
 				
 			document.querySelector(".img").src = current.condition.icon;
-			document.querySelector(".name").textContent = location.name;
-			document.querySelector(".region").textContent = location.region;
+			document.querySelector(".name").textContent = location.name + ", ";
+			document.querySelector(".region").textContent = location.region + ", ";
 			document.querySelector(".country").textContent = location.country;
 			document.querySelector(".temp").textContent = current.temp_c + "°C";
 			document.querySelector(".weather").textContent = current.condition.text;
@@ -64,29 +63,7 @@ function getWeather() {
 
 			document.querySelector(".container").classList.add(a);
 			document.querySelector(".container").classList.remove(b);
-			console.log("Location:");
-			console.log("  Name:", location.name);
-			console.log("  Region:", location.region);
-			console.log("  Country:", location.country);
-			console.log("  Latitude:", location.lat);
-			console.log("  Longitude:", location.lon);
-			console.log("  Timezone ID:", location.tz_id);
-			console.log("  Local Time Epoch:", location.localtime_epoch);
-			console.log("  Local Time:", location.localtime);
-	
-			console.log("Current Weather:");
-			console.log("  Last Updated Epoch:", current.last_updated_epoch);
-			console.log("  Last Updated:", current.last_updated);
-			console.log("  Temperature (Celsius):", current.temp_c);
-			console.log("  Is Day:", current.is_day);
-			console.log("  Condition Text:", current.condition.text);
-			console.log("  Condition Icon:", current.condition.icon);
-			console.log("  Wind Speed (Kph):", current.wind_kph);
-			console.log("  Wind Direction:", current.wind_dir);
-			console.log("  Humidity:", current.humidity);
-			console.log("  Cloud:", current.cloud);
-			console.log("  Feels Like (Celsius):", current.feelslike_c);
-			console.log("  UV Index:", current.uv);
+			document.querySelector(".card").style.display = "block";
 		})
 		.catch((error) => {
 			// Handle any errors here
