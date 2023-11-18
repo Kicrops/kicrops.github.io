@@ -71,3 +71,20 @@ input[type="color"] {
 }
 
 
+input[type="checkbox"] {
+	accent-color: var(--color);
+}
+
+.settings {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+
+}
+
+.am-pm {
+	font-size: 42px;
+}
+
+
