@@ -3,24 +3,24 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Weather</title>
-		<link rel="stylesheet" href="weather.css" />
-		<link rel="icon" type="image/x-icon" href="img/weatherapp.png" />
-
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
 		<header class="header">
-			<input type="search" value="London" name="" id="input" />
-			<button onclick="getWeather()">
-				<i class="fa-solid fa-magnifying-glass"></i>
-			</button>
+			<div class="search-bar">
+				<input type="search" value="Buenos Aires" name="" id="input" />
+				<button class="button" onclick="getWeather()">
+					<i class="fa-solid fa-magnifying-glass"></i>
+				</button>
+			</div>
 		</header>
 		<main class="container">
 			<div class="card">
 				<div class="location">
-					<span>Name: <span class="name"></span></span>
-					<span>Region: <span class="region"></span></span>
-					<span>Country: <span class="country"></span></span>
+					<span class="name"></span>
+					<span class="region"></span>
+					<span class="country"></span>
 				</div>
 				<div class="info">
 					<div class="main-info">
@@ -41,6 +41,6 @@
 		</main>
 
 		<script src="https://kit.fontawesome.com/6d6e8150be.js" crossorigin="anonymous"></script>
-		<script src="weather.js"></script>
+		<script src="main.js"></script>
 	</body>
 </html>
