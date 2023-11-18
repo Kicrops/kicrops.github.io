@@ -5,7 +5,12 @@ const intervalIDC = setInterval(updateColons, 500);
 
 function updateClock() {
 	const now = new Date(Date.now());
-	const hours = now.getHours() > 9 ? now.getHours() : "0" + now.getHours();
+
+	const hours = 
+	document.documentElement.getAttribute("data-mode") === "12" 
+	? now.getHours() > 12 ? now.getHours() - 12 : now.getHours() 
+	: now.getHours() > 9 ? now.getHours() : "0" + now.getHours();
+
 	const minutes = now.getMinutes() > 9 ? now.getMinutes() : "0" + now.getMinutes();
 	const seconds = now.getSeconds() > 9 ? now.getSeconds() : "0" + now.getSeconds();
 
@@ -21,6 +26,13 @@ function updateClock() {
 	document.querySelector(".year").textContent = now.getFullYear();
 
 	document.title = hours + ":" + minutes + " - Clock";
+
+	if (document.documentElement.getAttribute("data-mode") === "12") {
+		document.querySelector(".am-pm").textContent = now.getHours() >= 12 ? "PM" : "AM";
+	}	else {
+		document.querySelector(".am-pm").textContent = "";
+	}
+
 }
 
 function updateColons() {
@@ -42,4 +54,15 @@ colorPicker.addEventListener("change", changeColor, false);
 function changeColor(event) {
 	let color = event.target.value;
 	document.documentElement.style.setProperty("--color", color);
+}
+
+const checkbox = document.querySelector("#checkbox");
+checkbox.addEventListener("change", changeMode, false);
+
+function changeMode(event) {
+	if (event.target.checked) {
+		document.documentElement.setAttribute("data-mode", "12");
+	} else {
+		document.documentElement.setAttribute("data-mode", "24");
+	}
 }
